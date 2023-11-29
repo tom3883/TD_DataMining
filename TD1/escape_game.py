@@ -6,7 +6,7 @@ actions = 6
 final_state = 5
 reward = 100
 no_reward = 0
-gamma = 0 # immediate reward
+gamma = 0.8 # futur reward
 
 R = [
     [ -1, -1, -1, -1, 0, -1 ],
@@ -27,5 +27,8 @@ Q = [
     [ -1, 0, -1, -1, 0, 0 ],
 ]
 
-# 2.a. Using Bellman equation, compute the new value of Q(1,5)
-v = R[1][5] + gamma * np.max()
+# 2.a Using Bellman equation, compute the new value of Q(1,5)
+# 2.b Update the Q-table accordingly
+Q[1][5] = R[1][5] + gamma * np.max(Q[5,:])
+
+# 3 
