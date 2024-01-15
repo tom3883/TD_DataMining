@@ -1,0 +1,9 @@
+#### 2. Discuss the results.
+
+We can observe the difference of the Random Walk Kernel scores for the each pair of graphs.
+
+The score is the biggest for the first pair of graphs, G and G'. In fact, the importancy of this score can indicate the degree of similarity between the two graphs. Measuring the number of the common walks between G and G', we can observe that there are indeed many walks in common. We suppose that all the nodes have the same label.
+
+This score is much less for the graphs G' and G''. We can suggest that there are less common walks between these two graphs.
+
+Plus, we can observe the importancse of adding a lamda factor to the Random Walk Kernel value formula. The values that we have obtained are both rather important. Having an additional factor (lambda in the original formula) could prevent the value from diverging.
